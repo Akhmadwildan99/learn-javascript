@@ -69,14 +69,55 @@
 
 
 
-function jumlahkanAngka(...angka) {
-    let total = 0;
-    for(n of angka) {
-        total += n;
-    }
+// function jumlahkanAngka(...angka) {
+//     // let total = 0;
+//     // for(n of angka) {
+//     //     total += n;
+//     // }
 
-    return total;
+//     // return total;
+
+//     return angka.reduce((acc, cur) => acc + cur);
+
+// }
+
+// console.log(jumlahkanAngka(1,2,3,4,5,6,7));
+
+
+
+// Array Destructuring
+
+
+// const kelompok1 = ['akhmad', 'wildan', 'asta', 'yuno', 'yami', 'vanggance'];
+
+// const [ketua, wakil, ...anggota] = kelompok1;
+
+// console.log(anggota);
+
+
+
+
+// Object Destructuring
+
+// const myTeam = {
+//     pm: 'Wildan',
+//     frontEnd1: 'Akhmad',
+//     frontEnd2: 'Izuku',
+//     backEnd: 'Todoroki',
+//     ux: 'Shandi',
+//     devOps: 'Ronald'
+// }
+
+// const {pm, ...anggota} = myTeam;
+// console.log(anggota);
+
+
+// Filtering
+
+
+function filterBy(type, ...values) {
+    return values.filter(v => typeof v === type);
 
 }
 
-console.log(jumlahkanAngka(1,2,3,4,5,6,7));
+console.log(filterBy('boolean', 1, 3, 'wildan', false, 'string', 2, 5));

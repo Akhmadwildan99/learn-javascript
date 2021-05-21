@@ -10,7 +10,7 @@ $.ajax({
                             <div class="card-body">
                             <h5 class="card-title">${m.Title}</h5>
                             <h6 class="card-subtitle mb-2 text-muted">${m.Year}</h6>
-                            <a href="#" class="btn btn-primary modal-detail-button"  data-toggle="modal" data-target="#movieDetailModal">show details</a>
+                            <a href="#" class="btn btn-primary modal-detail-button"  data-toggle="modal" data-target="#movieDetailModal" data-imdbid="${m.imdbID}">show details</a>
                             </div>
                         </div>
 
